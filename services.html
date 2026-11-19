@@ -6,6 +6,27 @@
   <meta name="theme-color" content="#f1ecf4">
   <meta name="description" content="لايورا في حي المنار بالدمام: ورد وباقات وتغليف هدايا، تجهيز مناسبات وحفلات، تنسيق شبكات وكوشات عرايس. تواصل معنا على واتساب أو افتح موقع المحل.">
   <title>لايورا | ورد ومناسبات وشبكات وكوشات عرايس بالدمام</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18571837789"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18571837789');
+    document.addEventListener('click', function(event){
+      var link = event.target.closest('a[data-action]');
+      if (!link) return;
+      var action = link.dataset.action;
+      if (action !== 'whatsapp' && action !== 'directions' && action !== 'call') return;
+      var key = 'layora-tracked-' + action;
+      try { if (sessionStorage.getItem(key)) return; } catch (ignore) {}
+      if (action === 'whatsapp') {
+        gtag('event', 'conversion', {'send_to':'AW-18571837789/9NwQCMz6o7cdEN2C35dF'});
+      } else {
+        gtag('event', 'layora_' + action + '_click', {'send_to':'AW-18571837789'});
+      }
+      try { sessionStorage.setItem(key, '1'); } catch (ignore) {}
+    });
+  </script>
   <style>
     :root{--paper:#f1ecf4;--ink:#4f405a;--purple:#7e6a89;--muted:#75687a;--line:#d9cfdc}
     *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Tahoma,Arial,sans-serif;line-height:1.85}a{color:inherit}main{max-width:1040px;margin:auto;padding:24px 24px 120px}header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:12px 0 24px;border-bottom:1px solid var(--line)}.logo{width:164px;height:auto}.place{font-size:14px;color:var(--muted)}.hero{position:relative;padding:70px 0 54px;max-width:760px}.eyebrow{font-size:13px;color:var(--purple);margin:0 0 16px;letter-spacing:.05em}h1{font-size:clamp(32px,5.5vw,57px);line-height:1.5;font-weight:500;margin:0 0 20px}h2{font-size:25px;font-weight:500;margin:0 0 12px}p{margin:0 0 20px}.intro{font-size:18px;color:var(--muted);max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}.button{display:inline-flex;justify-content:center;align-items:center;min-height:52px;border:1px solid var(--purple);padding:12px 24px;border-radius:8px;text-decoration:none;font-size:15px;font-weight:bold;background:var(--ink);color:#fff}.button.secondary{color:var(--ink);background:transparent}.button:hover{background:var(--purple);color:white}.button:focus-visible,a:focus-visible{outline:3px solid var(--purple);outline-offset:4px}.nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:32px;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:14px}.nav a{text-decoration:none}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{background:rgba(255,255,255,.52);padding:32px;border:1px solid rgba(126,106,137,.2);border-radius:12px;scroll-margin-top:24px}.number{font-size:12px;color:var(--purple);display:block;margin-bottom:18px}.card p{color:var(--muted);font-size:15px}.card a{font-size:14px;text-underline-offset:6px}.contact{margin-top:42px;padding:36px 0;border-top:1px solid var(--line)}.contact p{color:var(--muted)}footer{padding:22px 0;border-top:1px solid var(--line);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px}.sticky{position:fixed;bottom:0;left:0;right:0;padding:12px 20px max(12px,env(safe-area-inset-bottom));background:rgba(241,236,244,.97);border-top:1px solid var(--line);display:flex;justify-content:center;gap:10px;z-index:3}.sticky .button{min-width:180px}.phone{direction:ltr;unicode-bidi:isolate}@media(max-width:640px){main{padding:16px 18px 126px}header{gap:14px}.logo{width:130px}.place{font-size:12px}.hero{padding:42px 0 34px}.intro{font-size:16px}.grid{grid-template-columns:1fr}.card{padding:25px}h2{font-size:23px}.actions .button{flex:1;padding:12px 16px}.sticky{padding-inline:12px}.sticky .button{min-width:0;flex:1;padding:11px 14px;font-size:14px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
