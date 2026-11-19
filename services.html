@@ -21,6 +21,8 @@
       try { if (sessionStorage.getItem(key)) return; } catch (ignore) {}
       if (action === 'whatsapp') {
         gtag('event', 'conversion', {'send_to':'AW-18571837789/9NwQCMz6o7cdEN2C35dF'});
+      } else if (action === 'directions') {
+        gtag('event', 'conversion', {'send_to':'AW-18571837789/Pk6ACMCYpbsdEN2C35dF'});
       } else {
         gtag('event', 'layora_' + action + '_click', {'send_to':'AW-18571837789'});
       }
